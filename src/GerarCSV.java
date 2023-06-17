@@ -15,6 +15,28 @@ public class GerarCSV {
             StringBuilder conteudo = new StringBuilder();
 
             for(Cadastro cadastro : cadastros){
+                conteudo.append("Nome | ");
+                conteudo.append("CPF | ");
+                conteudo.append("Sexo | ");
+                conteudo.append("Logradouro | ");
+                conteudo.append("Numero | ");
+                conteudo.append("Bairro | ");
+                conteudo.append("Complemento | ");
+                conteudo.append("Cidade | ");
+                conteudo.append("Estado | ");
+                conteudo.append("Email | ");
+                conteudo.append("Telefone | ");
+                conteudo.append("Celular | ");
+                conteudo.append("Whats? | ");
+                conteudo.append("Profissao | ");
+                conteudo.append("Empresa | ");
+                conteudo.append("Salario | ");
+                conteudo.append("Emprego Atual? | ");
+                conteudo.append("Pretencao Minima |");
+                conteudo.append("Pretencao Maxima | ");
+                conteudo.append("Habilidade |");
+                conteudo.append("\n");
+
                 conteudo.append(cadastro.getNome() + ";");
                 conteudo.append(cadastro.getCpf() + ";");
                 conteudo.append(cadastro.getSexo() + ";");
