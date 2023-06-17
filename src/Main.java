@@ -21,10 +21,10 @@ public class Main {
         cadastroA.setCelularWhats(true);
         cadastroA.setProfissao("Desenvolvedor Salesforce");
         cadastroA.setEmpresa("Consult Premium");
-        cadastroA.setSalario(5.000);
+        cadastroA.setSalario(5000.00);
         cadastroA.setEmpregoAtual(false);
-        cadastroA.setPretencaoMinima(4.000);
-        cadastroA.setPretencaoMaximo(6.000);
+        cadastroA.setPretencaoMinima(4000.00);
+        cadastroA.setPretencaoMaximo(6000.00);
         cadastroA.setHabilidade("Apex");
 
         Cadastro cadastroB = new Cadastro();
@@ -44,10 +44,10 @@ public class Main {
         cadastroB.setCelularWhats(false);
         cadastroB.setProfissao("Fisioterapeuta");
         cadastroB.setEmpresa("Hospital SARAH");
-        cadastroB.setSalario(4.000);
+        cadastroB.setSalario(4000.00);
         cadastroB.setEmpregoAtual(true);
-        cadastroB.setPretencaoMinima(6.000);
-        cadastroB.setPretencaoMaximo(8.000);
+        cadastroB.setPretencaoMinima(6000.00);
+        cadastroB.setPretencaoMaximo(8000.00);
         cadastroB.setHabilidade(" ");
 
         cadastros.add(cadastroA);

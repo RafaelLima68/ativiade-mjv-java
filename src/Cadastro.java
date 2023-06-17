@@ -1,4 +1,3 @@
-import java.util.Set;
 
 public class Cadastro {
     String nome;

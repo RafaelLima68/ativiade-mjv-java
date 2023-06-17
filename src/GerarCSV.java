@@ -3,8 +3,11 @@ import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
 import java.util.Set;
 import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.text.DecimalFormat;
 
 public class GerarCSV {
+    DecimalFormat decimalFormat = new DecimalFormat();
     public void textoCsv(Set<Cadastro> cadastros){
         System.out.println("**** - MEU ARQUIVO CSV - ****");
 
@@ -27,16 +30,16 @@ public class GerarCSV {
                 conteudo.append(cadastro.getCelularWhats() + ";");
                 conteudo.append(cadastro.getProfissao() + ";");
                 conteudo.append(cadastro.getEmpresa() + ";");
-                conteudo.append(cadastro.getSalario() + ";");
+                conteudo.append(decimalFormat.format(cadastro.getSalario()) + ";");
                 conteudo.append(cadastro.getEmpregoAtual() + ";");
-                conteudo.append(cadastro.getPretencaoMinima() + ";");
-                conteudo.append(cadastro.getPretencaoMaximo() + ";");
+                conteudo.append(decimalFormat.format(cadastro.getPretencaoMinima()) + ";");
+                conteudo.append(decimalFormat.format(cadastro.getPretencaoMaximo()) + ";");
                 conteudo.append(cadastro.getHabilidade() + ";");
                 conteudo.append("\n");
             }
             System.out.println(conteudo.toString());
 
-            Path arquivoDestino = Path.get("C:\\Java\\ativiade-mjv-java\\lista-cadastro.csv");
+            Path arquivoDestino = Paths.get("C:\\Java\\ativiade-mjv-java\\lista-cadastro.csv");
 
             Files.write(arquivoDestino, conteudo.toString().getBytes(StandardCharsets.UTF_8), StandardOpenOption.CREATE);
         }catch (Exception ex){
