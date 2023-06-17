@@ -27,5 +27,7 @@ public class Main {
         cadastros.setPretencaoMaximo(6.000);
         cadastros.setHabilidade("Apex");
 
+        // teste
+
     }
 }
